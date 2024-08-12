@@ -1,93 +1,48 @@
 *{
-    margin:  0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: 'Poppins',sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height:100vh;
-    background: #2f363e;
+.container{
+    max-width: 80%px;
+    /* background-color: rgb(194, 5, 125); */
+    padding: 34px;
+    margin:auto;
 }
-#time{
-    display:flex;
-    gap: 40px;
-    color: hsl(0, 9%, 37%);
-    width: 700px;
-    height: 450px;
-    background: hwb(152 6% 32%);
-    justify-content: center;
-    align-items: center;
-    box-shadow: 20px;
-    border-radius:20px;
-}
-#time .circle{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#time div{
-    position: absolute;
+.container h1,p{
     text-align: center;
-    font-weight: 500;
-    font-size: 1.5em;
+    font-size: 16px;
+}
+input , textarea{
+    display: block;
+    border: 2px solid black;
+
+    border-radius:6px;
+    outline: none;
+    font-size: 16px;
+    width: 80%;
+    margin: 11px auto;
     padding: 10px;
 }
-#time .ap{
-    position: relative;
-    font-size: 1em;
-    transform: translateX(-20px);
+form{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
 }
-#time div span{
-    position: absolute;
-    transform: translateX(-50%) translateY(-10px);
-    font-size: 0.35em;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.btn{
+    color: white;
+    background: purple;
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 14px;
+    cursor: pointer;
 }
-#time .circle svg{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    transform: rotate(270deg);
-}
-#time .circle svg circle{
+.bg{
     width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke: #f70707;
-    stroke-width: 4;
-    transform: translate(5px,5px);
-
-}
-#time .circle svg circle:nth-child(2){
-    stroke: var(--clr);
-    stroke-dasharray: 440;
-}
-.dots{
     position: absolute;
-    width: 100%;
-    height: 100%;  
-    z-index: 10;
-    display: flex; 
-    justify-content: center;
-}
-.dots::before{
-    content: "•";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background: var(--clr);
-    border-radius: 50%;
-    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+    z-index: -1;
+    opacity: 16; ;
 }
 
-body{
-    background-color: #fff;
-}
